@@ -420,7 +420,7 @@
                 height: 40svh;
                 min-height: 250px;
                 max-width: 160px;
-                background-color: rgba(26, 39, 100, 0.85);
+                background-color: rgba(26, 39, 100, 0.92);
                 /* #1a2764; */
                 display: flex;
                 flex-direction: column;

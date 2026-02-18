@@ -120,7 +120,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 
         else {
             navBar.style.display = 'flex';
-            navBar.style.backgroundColor = '#e4cea1';
+            navBar.style.backgroundColor = '#fdc6ba';
         }
 
         const bottomBar = document.querySelector('.bottom-bar');
