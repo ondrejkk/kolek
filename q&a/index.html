@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studentský Velehrad 2026</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preload" href="/fonts/Ohrada.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="/fonts/HelveticaNow.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="/fonts/HelveticaNowBold.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="/fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/OpenSans-Italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" as="image" href="/images/logo_b_transparent.webp">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/mobileMenu.css">
+
+
+    <style>
+        .about {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            padding-top: 50px;
+        }
+
+
+
+        .accordion-item {
+            margin-bottom: 0.5rem;
+        }
+
+        .accordion-body,
+        .accordion-body *,
+        .accordion-button,
+        .accordion-button * {
+            user-select: text !important;
+            -webkit-user-select: text !important;
+            -moz-user-select: text !important;
+            -ms-user-select: text !important;
+        }
+
+        .accordion-button {
+            white-space: normal !important;
+            overflow: visible !important;
+            text-overflow: unset !important;
+            line-height: 1.4;
+        }
+
+        .accordion-item {
+            margin-bottom: 0.8rem;
+        }
+
+        .about-flex {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 2rem auto;
+            gap: 20px;
+            padding: 0 20px;
+
+        }
+
+        .about-text {
+            color: #424753;
+            text-align: left;
+            width: 900px;
+            z-index: 999;
+        }
+
+        .about h2 {
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+            font-size: 18px;
+            color: #424753;
+            letter-spacing: 1px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .about p {
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            line-height: 2;
+        }
+
+        .about-text strong {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .donation-block {
+            color: #424753;
+
+        }
+
+        .thanks-message {
+            display: block;
+            margin-top: 50px;
+        }
+
+        #intro h1 a {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        #intro p a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <header id="g-navigation">
+        <div class="header-container">
+            <div class="logo">
+                <a href="/" class="logo-text">Studentský Velehrad</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/tym">Tým</a></li>
+                    <!-- <li><a href="/q&a">Q&A</a></li>
+                    <li><a href="/registrace">Registrace</a></li> -->
+                    <li><a href="https://sv24.studentskyvelehrad.cz/sv24" target="_blank">Minulý ročník</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="logo">
+        <a href="/" class="logo-text">Studentský Velehrad</a>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="hamburger-close" id="hamburger-close">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul>
+            <li><a href="/tym">Tým</a></li>
+            <!-- <li><a href="/q&a">Q&A</a></li>
+            <li><a href="/registrace">Registrace</a></li> -->
+            <li><a href="https://sv24.studentskyvelehrad.cz/sv24" target="_blank">Minulý ročník</a></li>
+        </ul>
+    </div>
+    <button class="hamburger" aria-label="Otevřít menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="content">
+        <div class="nav-bar"></div>
+        <div class="cover-bar"></div>
+
+        <!-- <main> -->
+        <section class="about">
+            <div class="about-flex">
+                <div class="about-text">
+
+                    <h2>Q&A</h2>
+
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q1">
+                                    Můžu přijet jen na část setkání?
+                                </button>
+                            </h2>
+                            <div id="q1" class="accordion-collapse collapse">
+                                <div class="accordion-body">Ano.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q2">
+                                    Kolik setkání stojí?
+                                </button>
+                            </h2>
+                            <div id="q2" class="accordion-collapse collapse">
+                                <div class="accordion-body">Viz tabulka s ceníkem (záleží na více faktorech).
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q3">
+                                    Můžu přijet, když nejsem vysokoškolákem?
+                                </button>
+                            </h2>
+                            <div id="q3" class="accordion-collapse collapse">
+                                <div class="accordion-body">Ano, pokud jsi v odpovídajícím věku.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q4">
+                                    Můžu přijet, když nejsem věřící nebo katolík?
+                                </button>
+                            </h2>
+                            <div id="q4" class="accordion-collapse collapse">
+                                <div class="accordion-body">Ano, pokud jsi v odpovídajícím věku.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q5">
+                                    Kde bude ubytování?
+                                </button>
+                            </h2>
+                            <div id="q5" class="accordion-collapse collapse">
+                                <div class="accordion-body">V okolních budovách (např. ZŠ, SGV).</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q6">
+                                    Chci si najít ubytování sám, je to možné?
+                                </button>
+                            </h2>
+                            <div id="q6" class="accordion-collapse collapse">
+                                <div class="accordion-body">Ne.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q7">
+                                    Chtěl/a bych být s kamarádem na pokoji, je to možné?
+                                </button>
+                            </h2>
+                            <div id="q7" class="accordion-collapse collapse">
+                                <div class="accordion-body">Ano.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q8">
+                                    Jak bude probíhat stravování?
+                                </button>
+                            </h2>
+                            <div id="q8" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Bude zajištěno v jídelně. Pro každou stravovací skupinu bude vyhrazený čas
+                                    (snídaně,
+                                    oběd,
+                                    večeře), pak bude bar.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q9">
+                                    Kde se dá parkovat?
+                                </button>
+                            </h2>
+                            <div id="q9" class="accordion-collapse collapse">
+                                <div class="accordion-body">Informace o parkování budou upřesněny.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q10">
+                                    Kdy bude zveřejněný program? / Kdy se dozvím, jací hosté přijedou?
+                                </button>
+                            </h2>
+                            <div id="q10" class="accordion-collapse collapse">
+                                <div class="accordion-body">Viz aplikace.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q11">
+                                    Jak si budu vybírat program?
+                                </button>
+                            </h2>
+                            <div id="q11" class="accordion-collapse collapse">
+                                <div class="accordion-body">Přes aplikaci.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q12">
+                                    Nemám chytrý telefon ani tablet, jak se můžu přihlašovat na program?
+                                </button>
+                            </h2>
+                            <div id="q12" class="accordion-collapse collapse">
+                                <div class="accordion-body">Kontaktuj organizátory, dohledají ti řešení.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q13">
+                                    Aplikace nefunguje! Na koho se mám obrátit?
+                                </button>
+                            </h2>
+                            <div id="q13" class="accordion-collapse collapse">
+                                <div class="accordion-body">Na správce aplikace 🙂</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q14">
+                                    Kde se dozvím další informace o setkání?
+                                </button>
+                            </h2>
+                            <div id="q14" class="accordion-collapse collapse">
+                                <div class="accordion-body">Sleduj sociální sítě 🙂</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q15">
+                                    Kdo akci připravuje?
+                                </button>
+                            </h2>
+                            <div id="q15" class="accordion-collapse collapse">
+                                <div class="accordion-body">Tým věřících vysokoškoláků a mladých pracujících.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q16">
+                                    Můžu se také nějak zapojit/pomoci?
+                                </button>
+                            </h2>
+                            <div id="q16" class="accordion-collapse collapse">
+                                <div class="accordion-body">Ano, pro dobrovolníky se vždy místo najde a budeme
+                                    rádi.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q17">
+                                    Kde si můžu koupit merch?
+                                </button>
+                            </h2>
+                            <div id="q17" class="accordion-collapse collapse">
+                                <div class="accordion-body">Na akci.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q18">
+                                    Kde probíhá registrace?
+                                </button>
+                            </h2>
+                            <div id="q18" class="accordion-collapse collapse">
+                                <div class="accordion-body">Přes formulář.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q19">
+                                    Kde jsou jednotlivé místnosti?
+                                </button>
+                            </h2>
+                            <div id="q19" class="accordion-collapse collapse">
+                                <div class="accordion-body">(mapka)</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q20">
+                                    Od kdy se můžu registrovat?
+                                </button>
+                            </h2>
+                            <div id="q20" class="accordion-collapse collapse">
+                                <div class="accordion-body">Od ledna.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q21">
+                                    Neexistuje nějaká sleva, když nás pojede více?
+                                </button>
+                            </h2>
+                            <div id="q21" class="accordion-collapse collapse">
+                                <div class="accordion-body">Bohužel ne.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q22">
+                                    Je možné Studentský Velehrad nějak finančně podpořit?
+                                </button>
+                            </h2>
+                            <div id="q22" class="accordion-collapse collapse">
+                                <div class="accordion-body">Ano, po přihlášení je možnost poslat dar přes QR
+                                    kód.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#q23">
+                                    Chtěl bych akci sponzorovat, na koho se mám obrátit?
+                                </button>
+                            </h2>
+                            <div id="q23" class="accordion-collapse collapse">
+                                <div class="accordion-body">Na vedení (sekce kontakty).</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <footer id="g-footer">
+                <div class="container footer-flex">
+                    <div class="footer-text">
+                        <p>
+                            Vysokoškolské katolické hnutí Česká republika, z.s.<br>
+                            Kozí 8<br>
+                            Brno, 602 00<br>
+                            IČO: 26610311<br>
+                            L 9486 vedená u Krajského soudu v Brně<br>
+                            <strong>Č. účtu:</strong> 2902653384/2010
+                        </p>
+                        <p>
+                            © 2024-2026 Studentský Velehrad. Všechna práva vyhrazena
+                        </p>
+                    </div>
+
+                    <div class="footer-logo">
+                        <img src="/images/logo_b_transparent.webp" alt="Logo SV26">
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <button id="scrollTopBtn" aria-label="Zpět nahoru"></button>
+    <div class="bottom-bar"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
