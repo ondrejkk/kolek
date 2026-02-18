@@ -297,7 +297,7 @@
             .nav-bar {
                 display: flex;
                 top: 0px;
-                background: #e4cea1;
+                background: #fdc6ba;
                 color: white;
                 position: fixed;
                 width: 100%;
@@ -328,7 +328,6 @@
             .bottom-bar {
                 position: fixed;
                 bottom: 0;
-                /* top: 0; */
                 background: #031a2b;
                 color: white;
                 width: 100%;
