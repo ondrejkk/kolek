@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studentský Velehrad 2026</title>
+    <title>Lorem ipsum 2026</title>
     <!-- preload pozadí -->
     <link rel="preload" href="fonts/Ohrada.otf" as="font" type="font/otf" crossorigin>
     <link rel="preload" href="fonts/HelveticaNow.otf" as="font" type="font/otf" crossorigin>
@@ -17,7 +17,7 @@
     <link rel="preload" as="image" href="images/SV26_IG.svg">
     <link rel="preload" as="image" href="images/SV26_YT.svg">
     <link rel="preload" as="image" href="images/arrow-up-circle.svg">
-    <link rel="preload" as="image" href="images/logo_b_transparent.webp">
+    <link rel="preload" as="image" href="images/logoipsum.svg">
     <link rel="preload" as="image" href="images/dlazdice/1.jpg">
     <link rel="preload" as="image" href="images/dlazdice/2.jpg">
     <link rel="preload" as="image" href="images/dlazdice/3.jpg">
@@ -25,7 +25,7 @@
     <link rel="preload" as="image" href="images/dlazdice/5.jpg">
     <link rel="preload" as="image" href="images/dlazdice/6.jpg">
     <link rel="stylesheet" href="style.css">
-
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
 
     <style>
@@ -318,6 +318,47 @@
                 padding-bottom: 1.5rem;
             }
         }
+
+        #countdown-wrapper {
+            background-color: #a982ac;
+            /* #e1543a; */
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .countdown-title {
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+
+        #countdown {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+        }
+
+        #countdown div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #countdown span {
+            font-size: 2rem;
+            line-height: 1;
+        }
+
+        #countdown small {
+            font-size: 0.7rem;
+        }
     </style>
 
 
@@ -332,10 +373,10 @@
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="/tym">Tým</a></li>
+                    <li><a href="/lorem">Lorem</a></li>
                     <!-- <li><a href="/q&a">Q&A</a></li>  
                     <li><a href="/registrace">Registrace</a></li> -->
-                    <li><a href="https://sv24.studentskyvelehrad.cz/sv24" target="_blank">Minulý ročník</a></li>
+                    <li><a href="https://seznam.cz" target="_blank">Ipsum</a></li>
                 </ul>
             </nav>
 
@@ -349,10 +390,10 @@
             <span></span>
         </button>
         <ul>
-            <li><a href="/tym">Tým</a></li>
+            <li><a href="/tym">Lorem</a></li>
             <!-- <li><a href="/q&a">Q&A</a></li> 
             <li><a href="/registrace">Registrace</a></li> -->
-            <li><a href="https://sv24.studentskyvelehrad.cz/sv24" target="_blank">Minulý ročník</a></li>
+            <li><a href="https://seznam.cz" target="_blank">Ipsum</a></li>
         </ul>
     </div>
     <button class="hamburger" aria-label="Otevřít menu">
@@ -367,7 +408,40 @@
         <div class="cover-bar"></div>
         <div class="cover">
             <div class="cover-content">
+
                 <div class="cover-text">
+                    <div id="countdown-wrapper">
+                        <p class="countdown-title">Donec porta diam tincidunt</p>
+
+                        <div id="countdown">
+                            <div>
+                                <span id="days">0</span>
+                                <small id="days-label">cras</small>
+                            </div>
+
+                            <span>:</span>
+
+                            <div>
+                                <span id="hours">0</span>
+                                <small id="hours-label">enim</small>
+                            </div>
+
+                            <span>:</span>
+
+                            <div>
+                                <span id="minutes">0</span>
+                                <small id="minutes-label">justo</small>
+                            </div>
+
+                            <span>:</span>
+
+                            <div>
+                                <span id="seconds">0</span>
+                                <small id="seconds-label">mollis</small>
+                            </div>
+                        </div>
+                    </div>
+
                     <h1>Lorem Ipsum 2026</h1>
                     <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <p class="date">30. varius – 3. mattis 2026</p>
@@ -387,9 +461,12 @@
                 <div class="about-text">
                     <h2>Dolor sit</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie orci sit amet euismod
-                        sagittis. In mattis dolor ut arcu aliquam, id pulvinar mi pharetra. Suspendisse potenti. Fusce
-                        tincidunt metus metus, a vehicula est congue at. Cras enim justo, bibendum eu diam ac, mollis
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie orci sit amet
+                        euismod
+                        sagittis. In mattis dolor ut arcu aliquam, id pulvinar mi pharetra. Suspendisse potenti.
+                        Fusce
+                        tincidunt metus metus, a vehicula est congue at. Cras enim justo, bibendum eu diam ac,
+                        mollis
                         gravida mauris.</p>
                     <p>Nullam condimentum leo euismod ligula maximus, rutrum condimentum ipsum mollis.
                         Quisque nec quam ex. Vivamus fermentum ligula neque, sed pulvinar leo malesuada nec. Nullam
@@ -399,10 +476,12 @@
 
                 <div class="about-text">
                     <h2>Proin ID: Urna auctor</h2>
-                    <p><em>„Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae“</em>
+                    <p><em>„Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                            curae“</em>
                     </p>
                     <p>
-                        Sed tincidunt pharetra efficitur. Curabitur quis diam volutpat, sagittis neque quis, cursus leo.
+                        Sed tincidunt pharetra efficitur. Curabitur quis diam volutpat, sagittis neque quis, cursus
+                        leo.
                         Pellentesque eget commodo dui, ac posuere magna. Quisque semper libero non dui convallis
                         egestas. Maecenas fermentum aliquam tristique. Proin id urna auctor, pretium lacus sit amet,
                         sagittis felis. Integer nec rhoncus tortor, sed tincidunt justo.</p>
@@ -472,27 +551,29 @@
 
             <div class="about-flex">
                 <div class="about-text">
-                    <h2>Je čas se přihlásit!</h2>
-                    <p>Kapacita ubytování na Velehradě není neomezená. Zajisti si své místo hned teď.
-                        Registrace <a href="/registrace">zde</a>.</p>
+                    <h2>Suspendisse viverra interdum!</h2>
+                    <p>Quisque rhoncus rutrum ultricies. Pellentesque consequat sollicitudin augue, in viverra dolor
+                        egestas vitae. Nulla porta sapien at dolor feugiat scelerisque <a href="/registrace">orci</a>.
+                    </p>
                 </div>
 
                 <div class="about-text">
-                    <h2>Kdo za tím stojí</h2>
-                    <p>Akci pořádá <a href="https://vkhcr.cz" target="_blank">Vysokoškolské katolické
-                            hnutí ČR</a>
-                        ve spolupráci s jednotlivými místními organizacemi.</p>
+                    <h2>Phasellus sit amet</h2>
+                    <p>Cras neque orci <a href="https://vkhcr.cz" target="_blank">venenatis ut nulla eget</a>
+                        sodales convallis tellus. Aenean pellentesque scelerisque purus, non laoreet sapien pretium
+                        vel.
+                    </p>
                 </div>
             </div>
             <div class="social-title">
-                <h2>Sleduj nás na sociálních sítích!</h2>
+                <h2>Vivamus venenatis fermentum sem!</h2>
                 <p>
-                    <a href="https://www.facebook.com/studentskyvelehrad/?locale=cs_CZ"><img src="images/SV26_FB.svg"
+                    <a href="https://www.facebook.com/kolek.ondrej/" target="_blank"><img src="images/SV26_FB.svg"
                             alt="Facebook"></a>
-                    <a href="https://www.instagram.com/studentsky_velehrad/"><img src="images/SV26_IG.svg"
+                    <a href="https://www.instagram.com/ondrej.kk" target="_blank"><img src="images/SV26_IG.svg"
                             alt="Instagram"></a>
-                    <a href="https://www.youtube.com/channel/UCBf-XP-0GacYV8bqpvq1dSw"><img src="images/SV26_YT.svg"
-                            alt="YouTube"></a>
+                    <a href="https://www.linkedin.com/in/ond%C5%99ej-kolek-4854bb174" target="_blank"><img
+                            src="images/linkedin.svg" alt="YouTube"></a>
                 </p>
             </div>
 
@@ -500,20 +581,20 @@
                 <div class="container footer-flex">
                     <div class="footer-text">
                         <p>
-                            Vysokoškolské katolické hnutí Česká republika, z.s.<br>
-                            Kozí 8<br>
-                            Brno, 602 00<br>
-                            IČO: 26610311<br>
-                            L 9486 vedená u Krajského soudu v Brně<br>
-                            <strong>Č. účtu: </strong>2902653384/2010
+                            Nalorem Vistara Xentum, z.r.<br>
+                            Mavira 18<br>
+                            Torena, 784 12<br>
+                            RIO: 58392017<br>
+                            Q 4712 relona tu Vastren Lomira<br>
+                            <strong>№ valora: </strong>8473926150/4827
                         </p>
                         <p>
-                            © 2024-2026 Studentský Velehrad. Všechna práva vyhrazena
+                            © 2024-2026 Valorem Nistara. Zorima valtrex nivora
                         </p>
                     </div>
 
                     <div class="footer-logo">
-                        <img src="images/logo_b_transparent.webp" alt="Logo SV26">
+                        <img src="images/logoipsum.svg" alt="Logo SV26">
                     </div>
                 </div>
             </div>
@@ -538,6 +619,38 @@
                 }
             });
         });
+
+
+        const targetDate = new Date(2026, 6, 1, 0, 0, 0).getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const diff = targetDate - now;
+
+            if (diff <= 0) {
+                document.getElementById("countdown").innerHTML = "Čas vypršel!";
+                return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((diff / (1000 * 60)) % 60);
+            const seconds = Math.floor((diff / 1000) % 60);
+
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        function getCzechPlural(number, one, few, many) {
+            if (number === 1) return one;
+            if (number >= 2 && number <= 4) return few;
+            return many;
+        }
     </script>
 </body>
 
