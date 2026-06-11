@@ -5,10 +5,6 @@ const navMenu = document.querySelector('#g-navigation nav ul');
 const body = document.body;
 
 
-// new DataTable('#example', {
-//     responsive: true
-// });
-
 // Funkce pro přepnutí menu
 function toggleMenu() {
     hamburger.classList.toggle("open");
